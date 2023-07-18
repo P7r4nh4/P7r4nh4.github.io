@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        body {
+            background-color: #333;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+        }
+        
+        .form-submit {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #444;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form action="log.php" method="POST">
+            <div class="form-group">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" id="name" name="name" class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">E-mail Adress:</label>
+                <input type="email" id="email" name="email" class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="message" class="form-label">Mesajınız:</label>
+                <textarea id="message" name="message" class="form-input" rows="5"></textarea>
+            </div>
+            <input type="submit" value="Send" class="form-submit">
+        </form>
+    </div>
+</body>
+</html>
